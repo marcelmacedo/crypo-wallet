@@ -8,8 +8,8 @@
     Seu curso é: <%= @curso %>
 </p>
 
-<p>Data: <%= data_br(Date.today)%></p>
+<p>Data: <%= l(Date.today)%></p>
 
 <p>Data I18n Internacionalizada: <%= Date.today%></p>
 
-<p>Idioma do sistema é: <strong> <%= locale %> </strong></p>
+<p>Idioma do sistema é: <strong> <%= t('actual_locale') %> </strong></p>
