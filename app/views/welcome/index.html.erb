@@ -1,13 +1,13 @@
-<p>
-    <%= link_to 'Português', root_path(locale: 'pt-BR') %>
-</p>
-<p>
-    <%= link_to 'English', root_path(locale: 'en') %>
-</p>
+<div class="jumbotron">
+  <h1 class="display-4">Seja bem vindo!</h1>
+  <p class="lead">Este é o Crypto Wallet para acompanhar suas moedas.</p>
+  <hr class="my-4">
+  <p>Selecione as opções abaixo</p>
+  <%= render 'menu' %>
+</div>
 
-<h1>Seja bem vindo</h1>
 
-<%= render 'menu' %>
+
 
 <p>Ola <%= @meu_nome %></p>
 
